@@ -6,7 +6,7 @@ Bu rehberde Boundless testnet üzerinde Dev ve Prover rollerini almak için gere
 
 ## 🧱 1. Boundless Repo'sunu Klonla
 
-```bash
+```yaml
 git clone https://github.com/boundless-xyz/boundless
 cd boundless
 git checkout release-0.10
