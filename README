@@ -1,0 +1,237 @@
+# Boundless Dev & Prover Rolü Alma Rehberi
+
+Bu rehberde Boundless testnet üzerinde Dev ve Prover rollerini almak için gerekli tüm adımlar yer almaktadır.
+
+---
+
+## 🧱 1. Boundless Repo'sunu Klonla
+
+```bash
+git clone https://github.com/boundless-xyz/boundless
+cd boundless
+git checkout release-0.10
+```
+
+---
+
+## 🦀 2. Rust Kurulumu
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Kurulum sırasında şu çıkarsa:
+
+```
+1) Proceed with installation (default)
+```
+
+→ `1` yazıp Enter'a bas.
+
+Sonrasında:
+
+```bash
+source $HOME/.cargo/env
+```
+
+---
+
+## ⚙️ 3. RISC Zero Kurulumu
+
+```bash
+curl -L https://risczero.com/install | bash
+source ~/.zshrc
+rzup install
+```
+
+---
+
+## 📦 4. Bento Client Kurulumu
+
+```bash
+cargo install --git https://github.com/risc0/risc0 bento-client --bin bento_cli
+export PATH="$HOME/.cargo/bin:$PATH"
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+---
+
+## 🚀 5. Boundless CLI Kurulumu
+
+```bash
+cargo install --locked boundless-cli
+```
+
+---
+
+## 🧾 6. .env.eth-sepolia Dosyasını Oluştur
+
+Aşağıdaki komutla dosyayı aç:
+
+```bash
+vim .env.eth-sepolia
+```
+
+En altına şunları ekle (kendi bilgilerinle değiştir):
+
+```bash
+export ETH_RPC_URL="https://sepolia.infura.io/v3/<senin_project_id>"
+export PRIVATE_KEY="0x<test_cüzdanının_private_key>"
+```
+
+Örnek tüm dosya:
+
+```bash
+export VERIFIER_ADDRESS=0x925d8331ddc0a1F0d96E68CF073DFE1d92b69187
+export BOUNDLESS_MARKET_ADDRESS=0x13337C76fE2d1750246B68781ecEe164643b98Ec
+export SET_VERIFIER_ADDRESS=0x7aAB646f23D1392d4522CFaB0b7FB5eaf6821d64
+export ORDER_STREAM_URL="https://eth-sepolia.beboundless.xyz/"
+export ETH_RPC_URL="https://sepolia.infura.io/v3/xxxxx"
+export PRIVATE_KEY="0xabc..."
+```
+
+Kaydetmek için:
+- `ESC` tuşuna bas
+- `:wq` yaz → Enter
+
+Sonrasında:
+
+```bash
+source .env.eth-sepolia
+```
+
+---
+
+## 💰 7. Sepolia USDC Faucet'ten Token Al
+
+Git: https://faucet.circle.com
+
+- Ağ: **Sepolia**
+- Adresini gir → “Send 10 USDC” butonuna tıkla
+
+---
+
+## 🪙 8. Stake İşlemi Yap
+
+USDC geldiğinde aşağıdaki komutu çalıştır:
+
+```bash
+boundless   --rpc-url "$ETH_RPC_URL"   --private-key "$PRIVATE_KEY"   --boundless-market-address 0x13337C76fE2d1750246B68781ecEe164643b98Ec   --set-verifier-address 0x7aAB646f23D1392d4522CFaB0b7FB5eaf6821d64   --verifier-router-address 0x925d8331ddc0a1F0d96E68CF073DFE1d92b69187   --order-stream-url "https://eth-sepolia.beboundless.xyz/"   account deposit-stake 10
+```
+
+Başarılı çıktı şu şekilde olur:
+
+```
+INFO boundless: Successfully deposited 10 USDC as stake
+```
+
+---
+
+## 🏅 9. Rolünü Al
+
+1. Git: https://guild.xyz/boundless-xyz  
+2. Sayfayı yenile → cüzdanını bağla  
+3. Eğer stake işlemi algılanırsa `Dev` ve `Prover` rozetleri aktifleşir  
+4. Ardından Discord’da `#claim-dev-prover-roles` kanalına git → “Claim the Prover role on Guild.xyz” butonuna tıkla
+
+🎉 Tebrikler! Artık Boundless Dev & Prover rollerine sahipsin!
+
+
+
+
+
+
+
+
+
+# Boundless Dev & Prover Rolü Alma Rehberi
+
+Bu rehberde Boundless testnet üzerinde Dev ve Prover rollerini almak için gerekli tüm adımlar yer almaktadır.
+
+---
+
+## 🧱 1. Boundless Repo'sunu Klonla
+
+```bash
+git clone https://github.com/boundless-xyz/boundless
+cd boundless
+git checkout release-0.10
+```
+
+
+
+
+
+
+
+
+
+
+
+Boundless repo'sunu klonla
+
+```bash
+git clone https://github.com/boundless-xyz/boundless
+```
+
+Boundless içine gir
+
+```bash
+cd boundless
+```
+
+release-0.10 branch’ine geç
+```bash
+git checkout release-0.10
+```
+
+Rust kur
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+1) Proceed with installation (default) diyorsa, 1 yazıp Enter'la devam et.
+
+Rust ortamı source ile aktifleştir.
+```bash
+source $HOME/.cargo/env
+curl -L https://risczero.com/install | bash
+source ~/.zshrc
+```
+
+
+RISC Zero kur
+```bash
+rzup install
+```
+
+bento-client kur
+```bash
+cargo install --git https://github.com/risc0/risc0 bento-client --bin bento_cli
+export PATH="$HOME/.cargo/bin:$PATH"
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+boundless-cli kurulumu 
+```bash
+cargo install --locked boundless-cli
+```
+
+```bash
+vim .env.eth-sepolia
+
+en altına ekle
+```bash
+export ETH_RPC_URL="https://sepolia.infura.io/v3/<senin_project_id>"
+export PRIVATE_KEY="0x<test_cüzdanının_private_key>"
+```
+
+
+Yani bu şekilde gözükecek.
+
+export
+export
+export
+export
+export
