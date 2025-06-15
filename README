@@ -22,9 +22,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Kurulum sırasında şu çıkarsa:
 
-```
 1) Proceed with installation (default)
-```
 
 → `1` yazıp Enter'a bas.
 
