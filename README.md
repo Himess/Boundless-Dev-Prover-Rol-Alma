@@ -1,16 +1,18 @@
 # Boundless Dev & Prover Rolü Alma Rehberi
 
+# GÜNCELLEME ! 
+Roller artık sadece Base Mainnet üzerinde alınabiliyor ve de 10 Dolar maliyeti var. 
+
 ![image](https://github.com/user-attachments/assets/7baa366f-c773-47e3-b13e-b80b0e2ca877)
 
-Bu rehberde Boundless testnet üzerinde Dev ve Prover rollerini almak için gerekli tüm adımlar yer almaktadır.
+Bu rehberde Boundless  Base Mainnet üzerinde Dev ve Prover rollerini almak için gerekli tüm adımlar yer almaktadır.
 
 Öncelikle Bu roller ‘ in herhangi bir teşviği açıklanmadı ve garantisi yoktur. Kendim aldım ve sizinle paylaşmak istedim.
 Eğer daha önce hiç bir node kurulumu vs. gerçekleştirmediyseniz zorlanabilirsiniz. Lakin elimden geldiğinice basit bir şekilde anlatmaya çalıştım.
 
 Ben M2 air kullancısıyım. Kendi pc' me kurulumu yaptım. İsterseniz VPS kiralayıp işlemleri yapabilirsiniz. Linux/M1/M3 için aynıdır diye tahmin ediyorum. Farklı olabilecek yerleri belirrtim.
-Tabi bir de Sepolia ETH almayı da unutmayın.
 
-## ÖNEMLİ UYARI !!! Burada Metamask için kullanacağınız cüzdanın testnet cüzdanı olmasını şiddetle tavsiye ederim. Priv key kullanacağımız için pc’de depolanması sıkıntılar yaratabilir. Boş bir metamask adresi işinizi görecektir.
+## ÖNEMLİ UYARI !!! Burada Metamask için kullanacağınız cüzdanın testnet cüzdanı olmasını şiddetle tavsiye ederim. İçerisinde sadece 10 Usdc + Ufak miktar ETH bulundurun. Priv key kullanacağımız için pc’de depolanması sıkıntılar yaratabilir. Boş bir metamask adresi işinizi görecektir.
 
 Öncelikle gereklilikler
 
@@ -212,6 +214,8 @@ Başarılı çıktı şu şekilde olur:
 ![We have updated your accesses](https://github.com/user-attachments/assets/87815cf0-f957-4c6a-8e24-d99f9dfd7817)
 
 🎉 Tebrikler! Artık Boundless Dev & Prover rollerine sahipsin!
+
+![image](https://github.com/user-attachments/assets/de715c44-f54f-4ecb-b772-22cbff674433)
 
 Thanks to @Miles082510 and @0xMoei
 
