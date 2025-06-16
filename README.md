@@ -116,20 +116,20 @@ cargo install --locked boundless-cli
 
 ---
 
-## 🧾 6. .env.eth-sepolia Dosyasını Oluştur
+## 🧾 6. .env.base Dosyasını Oluştur
 
 Aşağıdaki komutla dosyayı aç:
 
 ```bash
-vim .env.eth-sepolia
+nano .env.base
 ```
 
 En altına şunları ekle (kendi bilgilerinle değiştir):
 Burada en başta aldığımız infura rpc ve priv keyi girin.
 
 ```bash
-export ETH_RPC_URL="https://sepolia.infura.io/v3/<senin_project_id>"
-export PRIVATE_KEY="0x<test_cüzdanının_private_key>"
+export ETH_RPC_URL="https://base-mainnet.infura.io/v3/<senin_project_id>"
+export PRIVATE_KEY="<test_cüzdanının_private_key>"
 ```
 
 Örnek tüm dosya:
@@ -139,32 +139,26 @@ export VERIFIER_ADDRESS=0x925d8331ddc0a1F0d96E68CF073DFE1d92b69187
 export BOUNDLESS_MARKET_ADDRESS=0x13337C76fE2d1750246B68781ecEe164643b98Ec
 export SET_VERIFIER_ADDRESS=0x7aAB646f23D1392d4522CFaB0b7FB5eaf6821d64
 export ORDER_STREAM_URL="https://eth-sepolia.beboundless.xyz/"
-export ETH_RPC_URL="https://sepolia.infura.io/v3/xxxxx"
-export PRIVATE_KEY="0xabc..."
+export ETH_RPC_URL="https://base-mainnet.infura.io/v3/xxxxx"
+export PRIVATE_KEY="abc..."
 ```
 
 export ORDER_STREAM_URL="https://eth-sepolia.beboundless.xyz/" Bunu ellemeyin , bu olduğu gibi kalsın.
 
 Kaydetmek için:
-- `ESC` tuşuna bas
-- `:wq` yaz → Enter
+Control X + Y Enter
 
 Sonrasında:
 
 ```bash
-source .env.eth-sepolia
+source .env.base
 ```
 
 ---
 
-## 💰 7. Sepolia USDC Faucet'ten Token Al
+## 💰 7. BASE Mainnet USDC 10 USDC AL.
 
-Git: https://faucet.circle.com
-
-![Testnet Faucet](https://github.com/user-attachments/assets/98d063c0-b94b-4025-8647-5190b369b8de)
-
-- Ağ: **Sepolia**
-- Adresini gir → “Send 10 USDC” butonuna tıkla
+https://app.uniswap.org/swap ' gir ve Base Mainnet'te En az 10 USDC al.
 
 ---
 
@@ -190,7 +184,7 @@ boundless \
   --set-verifier-address 0x7aAB646f23D1392d4522CFaB0b7FB5eaf6821d64 \
   --verifier-router-address 0x925d8331ddc0a1F0d96E68CF073DFE1d92b69187 \
   --order-stream-url "https://eth-sepolia.beboundless.xyz/" \
-  account deposit 0.1
+  account deposit 0.00000000001
 ```
 
 Başarılı çıktı şu şekilde olur:
