@@ -167,7 +167,14 @@ https://app.uniswap.org/swap ' gir ve Base Mainnet'te En az 10 USDC al.
 USDC geldiğinde aşağıdaki komutu çalıştır:
 
 ```bash
-boundless   --rpc-url "$ETH_RPC_URL"   --private-key "$PRIVATE_KEY"   --boundless-market-address 0x13337C76fE2d1750246B68781ecEe164643b98Ec   --set-verifier-address 0x7aAB646f23D1392d4522CFaB0b7FB5eaf6821d64   --verifier-router-address 0x925d8331ddc0a1F0d96E68CF073DFE1d92b69187   --order-stream-url "https://eth-sepolia.beboundless.xyz/"   account deposit-stake 10
+boundless \
+  --rpc-url "$ETH_RPC_URL" \
+  --private-key "$PRIVATE_KEY" \
+  --boundless-market-address 0x26759dbB201aFbA361Bec78E097Aa3942B0b4AB8 \
+  --set-verifier-address 0x8C5a8b5cC272Fe2b74D18843CF9C3aCBc952a760 \
+  --verifier-router-address 0x0b144e07a0826182b6b59788c34b32bfa86fb711 \
+  --order-stream-url https://base-mainnet.beboundless.xyz \
+  account deposit-stake 10
 ```
 
 Başarılı çıktı şu şekilde olur:
@@ -180,10 +187,10 @@ Başarılı çıktı şu şekilde olur:
 boundless \
   --rpc-url "$ETH_RPC_URL" \
   --private-key "$PRIVATE_KEY" \
-  --boundless-market-address 0x13337C76fE2d1750246B68781ecEe164643b98Ec \
-  --set-verifier-address 0x7aAB646f23D1392d4522CFaB0b7FB5eaf6821d64 \
-  --verifier-router-address 0x925d8331ddc0a1F0d96E68CF073DFE1d92b69187 \
-  --order-stream-url "https://eth-sepolia.beboundless.xyz/" \
+  --boundless-market-address 0x26759dbB201aFbA361Bec78E097Aa3942B0b4AB8 \
+  --set-verifier-address 0x8C5a8b5cC272Fe2b74D18843CF9C3aCBc952a760 \
+  --verifier-router-address 0x0b144e07a0826182b6b59788c34b32bfa86fb711 \
+  --order-stream-url "https://base-mainnet.beboundless.xyz" \
   account deposit 0.00000000001
 ```
 
