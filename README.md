@@ -145,7 +145,7 @@ export ETH_RPC_URL="https://base-mainnet.infura.io/v3/xxxxx"
 export PRIVATE_KEY="abc..."
 ```
 
-export ORDER_STREAM_URL="https://eth-sepolia.beboundless.xyz/" Bunu ellemeyin , bu olduğu gibi kalsın.
+`export ORDER_STREAM_URL="https://base-mainnet.beboundless.xyz"` Bunu ellemeyin , bu olduğu gibi kalsın.
 
 Kaydetmek için:
 Control X + Y Enter
