@@ -176,6 +176,7 @@ boundless \
   --set-verifier-address 0x8C5a8b5cC272Fe2b74D18843CF9C3aCBc952a760 \
   --verifier-router-address 0x0b144e07a0826182b6b59788c34b32bfa86fb711 \
   --order-stream-url https://base-mainnet.beboundless.xyz \
+  --chain-id 8453 \
   account deposit-stake 10
 ```
 
@@ -193,6 +194,7 @@ boundless \
   --set-verifier-address 0x8C5a8b5cC272Fe2b74D18843CF9C3aCBc952a760 \
   --verifier-router-address 0x0b144e07a0826182b6b59788c34b32bfa86fb711 \
   --order-stream-url "https://base-mainnet.beboundless.xyz" \
+  --chain-id 8453 \
   account deposit 0.00000000001
 ```
 
